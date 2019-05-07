@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B44BE56F-306D-4C13-8500-BAEF46F1AC6E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DrugShop.WinUI</RootNamespace>
+    <AssemblyName>DrugShop.WinUI</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/StoreHouse.UI/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Bin\DotNet4.0\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Bin\DotNet4.0\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EAS.Data">
+      <HintPath>..\..\Bin\DotNet4.0\EAS.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="EAS.Data.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a550803c4cd9dbb5, processorArchitecture=MSIL" />
+    <Reference Include="EAS.Explorer, Version=3.4.0.0, Culture=neutral, PublicKeyToken=a550803c4cd9dbb5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\DotNet4.0\EAS.Explorer.dll</HintPath>
+    </Reference>
+    <Reference Include="EAS.Explorer.BLL.Contracts, Version=5.0.0.0, Culture=neutral, PublicKeyToken=a550803c4cd9dbb5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\DotNet4.0\EAS.Explorer.BLL.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="EAS.Explorer.Entities, Version=5.0.0.0, Culture=neutral, PublicKeyToken=a550803c4cd9dbb5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\DotNet4.0\EAS.Explorer.Entities.dll</HintPath>
+    </Reference>
+    <Reference Include="EAS.GReport.Controls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a550803c4cd9dbb5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\DotNet4.0\EAS.GReport.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="EAS.MicroKernel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=a550803c4cd9dbb5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\DotNet4.0\EAS.MicroKernel.dll</HintPath>
+    </Reference>
+    <Reference Include="EAS.Report.Controls, Version=3.2.0.0, Culture=neutral, PublicKeyToken=a550803c4cd9dbb5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\DotNet4.0\EAS.Report.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="EAS.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=a550803c4cd9dbb5, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Bin\DotNet4.0\EAS.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasicData\DrugDict\DrugDictEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicData\DrugDict\DrugDictEditor.Designer.cs">
+      <DependentUpon>DrugDictEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicData\DrugDict\DrugDictList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BasicData\DrugDict\DrugDictList.Designer.cs">
+      <DependentUpon>DrugDictList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicData\DrugDict\DrugUnit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BasicData\DrugDict\DrugUnit.Designer.cs">
+      <DependentUpon>DrugUnit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicData\DrugType\DrugTypeList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BasicData\DrugType\DrugTypeList.Designer.cs">
+      <DependentUpon>DrugTypeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicData\Provider\ProvideListControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BasicData\Provider\ProvideListControl.Designer.cs">
+      <DependentUpon>ProvideListControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicData\Provider\ProviderEditor2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicData\Provider\ProviderEditor2.Designer.cs">
+      <DependentUpon>ProviderEditor2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonUI\BaseReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonUI\BaseReport.Designer.cs">
+      <DependentUpon>BaseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommonUI\ConditionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonUI\ConditionControl.Designer.cs">
+      <DependentUpon>ConditionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridViewHelper.cs" />
+    <Compile Include="DrugIn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugIn.Designer.cs">
+      <DependentUpon>DrugIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugSale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugSale.Designer.cs">
+      <DependentUpon>DrugSale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\ReportExtensions.cs" />
+    <Compile Include="Helper\XContext.cs" />
+    <Compile Include="RDL\RDLHelper.cs" />
+    <Compile Include="RDL\RDLResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RDLResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DrugInRpt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\DrugInRpt.Designer.cs">
+      <DependentUpon>DrugInRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeachControl\DrugInSeachControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SeachControl\DrugInSeachControl.Designer.cs">
+      <DependentUpon>DrugInSeachControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStoreAdjust.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStoreAdjust.Designer.cs">
+      <DependentUpon>DrugStoreAdjust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugStoreCount.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugStoreCount.Designer.cs">
+      <DependentUpon>DrugStoreCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Helper\DataBindHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Helper\DataConvertHelper.cs" />
+    <Compile Include="DrugBackProvider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugBackProvider.Designer.cs">
+      <DependentUpon>DrugBackProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugChangePrice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugChangePrice.Designer.cs">
+      <DependentUpon>DrugChangePrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumberInput\NumberInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberInput\NumberInput.Designer.cs">
+      <DependentUpon>NumberInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BasicData\Provider\ProviderSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BasicData\Provider\ProviderSelect.Designer.cs">
+      <DependentUpon>ProviderSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumberInput\SalePriceInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberInput\SalePriceInput.Designer.cs">
+      <DependentUpon>SalePriceInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumberInput\StoreCountNumberInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberInput\StoreCountNumberInput.Designer.cs">
+      <DependentUpon>StoreCountNumberInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\StoreCountQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\StoreCountQuery.designer.cs">
+      <DependentUpon>StoreCountQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\DrugBackCustomQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\DrugBackCustomQuery.Designer.cs">
+      <DependentUpon>DrugBackCustomQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeachControl\DrugInOutSearchControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SeachControl\DrugInOutSearchControl.Designer.cs">
+      <DependentUpon>DrugInOutSearchControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Query\DrugLostQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\DrugLostQuery.Designer.cs">
+      <DependentUpon>DrugLostQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Query\DrugStoreQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\DrugStoreQuery.Designer.cs">
+      <DependentUpon>DrugStoreQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\DrugLimitQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\DrugLimitQuery.Designer.cs">
+      <DependentUpon>DrugLimitQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\DrugInOutRpt.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Report\DrugInOutRpt.Designer.cs">
+      <DependentUpon>DrugInOutRpt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\DrugInQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\DrugInQuery.Designer.cs">
+      <DependentUpon>DrugInQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\DrugSaleQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\DrugSaleQuery.Designer.cs">
+      <DependentUpon>DrugSaleQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\DrugChangePriceQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\DrugChangePriceQuery.Designer.cs">
+      <DependentUpon>DrugChangePriceQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Query\DrugBackProviderQuery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Query\DrugBackProviderQuery.Designer.cs">
+      <DependentUpon>DrugBackProviderQuery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumberInput\DrugInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberInput\DrugInput.Designer.cs">
+      <DependentUpon>DrugInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugBackCustom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugBackCustom.Designer.cs">
+      <DependentUpon>DrugBackCustom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumberInput\BackNumberInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberInput\BackNumberInput.Designer.cs">
+      <DependentUpon>BackNumberInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrugLost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DrugLost.Designer.cs">
+      <DependentUpon>DrugLost.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BasicData\DrugDict\DrugDictEditor.resx">
+      <DependentUpon>DrugDictEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicData\DrugDict\DrugDictList.resx">
+      <DependentUpon>DrugDictList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicData\DrugDict\DrugUnit.resx">
+      <DependentUpon>DrugUnit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicData\DrugType\DrugTypeList.resx">
+      <DependentUpon>DrugTypeList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicData\Provider\ProvideListControl.resx">
+      <DependentUpon>ProvideListControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicData\Provider\ProviderEditor2.resx">
+      <DependentUpon>ProviderEditor2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonUI\BaseReport.resx">
+      <DependentUpon>BaseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommonUI\ConditionControl.resx">
+      <DependentUpon>ConditionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugBackProvider.resx">
+      <DependentUpon>DrugBackProvider.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugChangePrice.resx">
+      <DependentUpon>DrugChangePrice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugIn.resx">
+      <DependentUpon>DrugIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugSale.resx">
+      <DependentUpon>DrugSale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RDL\RDLResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RDLResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeachControl\DrugInSeachControl.resx">
+      <DependentUpon>DrugInSeachControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStoreAdjust.resx">
+      <DependentUpon>DrugStoreAdjust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugStoreCount.resx">
+      <DependentUpon>DrugStoreCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberInput\NumberInput.resx">
+      <DependentUpon>NumberInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BasicData\Provider\ProviderSelect.resx">
+      <DependentUpon>ProviderSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberInput\SalePriceInput.resx">
+      <DependentUpon>SalePriceInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberInput\StoreCountNumberInput.resx">
+      <DependentUpon>StoreCountNumberInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\StoreCountQuery.resx">
+      <DependentUpon>StoreCountQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\DrugBackCustomQuery.resx">
+      <DependentUpon>DrugBackCustomQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeachControl\DrugInOutSearchControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DrugInOutSearchControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\DrugLostQuery.resx">
+      <DependentUpon>DrugLostQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\DrugStoreQuery.resx">
+      <DependentUpon>DrugStoreQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\DrugLimitQuery.resx">
+      <DependentUpon>DrugLimitQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\DrugInOutRpt.resx">
+      <DependentUpon>DrugInOutRpt.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\DrugInQuery.resx">
+      <DependentUpon>DrugInQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\DrugSaleQuery.resx">
+      <DependentUpon>DrugSaleQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\DrugChangePriceQuery.resx">
+      <DependentUpon>DrugChangePriceQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Query\DrugBackProviderQuery.resx">
+      <DependentUpon>DrugBackProviderQuery.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberInput\DrugInput.resx">
+      <DependentUpon>DrugInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugBackCustom.resx">
+      <DependentUpon>DrugBackCustom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberInput\BackNumberInput.resx">
+      <DependentUpon>BackNumberInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrugLost.resx">
+      <DependentUpon>DrugLost.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\AgileHIS.DrugHouse.DAL.DrugBackDepart.datasource" />
+    <None Include="Properties\DataSources\AgileHIS.DrugHouse.DAL.DrugBackDepartExv.datasource" />
+    <None Include="Properties\DataSources\AgileHIS.DrugHouse.DAL.DrugBackProviderExv.datasource" />
+    <None Include="Properties\DataSources\AgileHIS.DrugHouse.DAL.DrugChangePrice.datasource" />
+    <None Include="Properties\DataSources\AgileHIS.DrugHouse.DAL.DrugIn.datasource" />
+    <None Include="Properties\DataSources\AgileHIS.DrugHouse.DAL.DrugInExBack.datasource" />
+    <None Include="Properties\DataSources\AgileHIS.DrugHouse.DAL.DrugLost.datasource" />
+    <None Include="Properties\DataSources\AgileHIS.DrugHouse.DAL.DrugLostApplyEx.datasource" />
+    <None Include="Properties\DataSources\AgileHIS.DrugHouse.DAL.DrugLostApplyEx1.datasource" />
+    <None Include="Properties\DataSources\AgileHIS.DrugHouse.DAL.DrugOut.datasource" />
+    <None Include="Properties\DataSources\AgileHIS.DrugHouse.DAL.DrugOutExBack.datasource" />
+    <None Include="Properties\DataSources\AgileHIS.DrugHouse.DAL.DrugPlan.datasource" />
+    <None Include="Properties\DataSources\AgileHIS.DrugHouse.DAL.DrugStore.datasource" />
+    <None Include="Properties\DataSources\AgileHIS.DrugHouse.DAL.DrugStore1.datasource" />
+    <None Include="Properties\DataSources\AgileHIS.DrugHouse.DAL.DrugStore2.datasource" />
+    <None Include="Properties\DataSources\AgileHIS.DrugHouse.DAL.DrugStore3.datasource" />
+    <None Include="Properties\DataSources\AgileHIS.DrugHouse.DAL.DrugStore4.datasource" />
+    <None Include="Properties\DataSources\AgileHIS.DrugHouse.DAL.DrugStore5.datasource" />
+    <None Include="Properties\DataSources\AgileHIS.DrugHouse.DAL.DrugStoreCount.datasource" />
+    <None Include="Properties\DataSources\AgileHIS.DrugHouse.DAL.StorePlan.datasource" />
+    <None Include="Properties\DataSources\Common.DAL.Provider.datasource" />
+    <None Include="Properties\DataSources\DrugDict.DAL.Dm_dict.datasource" />
+    <None Include="Properties\DataSources\DrugHouse.DAL.Dm_rcback.datasource" />
+    <None Include="Properties\DataSources\DrugHouse.DAL.Dm_rcount.datasource" />
+    <None Include="Properties\DataSources\DrugHouse.DAL.Dm_rpback.datasource" />
+    <None Include="Properties\DataSources\DrugHouse.DAL.DrugType.datasource" />
+    <None Include="Properties\DataSources\DrugStore.DAL.Dm_rcprice.datasource" />
+    <None Include="Properties\DataSources\DrugStore.DAL.Dm_rin.datasource" />
+    <None Include="Properties\DataSources\DrugStore.DAL.Dm_rlost.datasource" />
+    <None Include="Properties\DataSources\DrugStore.DAL.Dm_rout.datasource" />
+    <None Include="Properties\DataSources\DrugStore.DAL.Dm_rplan.datasource" />
+    <None Include="Properties\DataSources\DrugStore.DAL.Dm_rstore.datasource" />
+    <Content Include="RDL\Files\药品入库报表.xml" />
+    <Content Include="RDL\Files\药店收支报表.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DrugShop.BLL.Contracts\DrugShop.BLL.Contracts.csproj">
+      <Project>{AAC09C5E-ADAF-4BF4-BA5C-49A95B4BB50E}</Project>
+      <Name>DrugShop.BLL.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DrugShop.Entities\DrugShop.Entities.csproj">
+      <Project>{08555D81-EEEB-41A7-80DC-6B30591D1C81}</Project>
+      <Name>DrugShop.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

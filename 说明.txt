@@ -1,0 +1,12 @@
+DrugShop-药品商店信息系统。
+
+基于AgileEAS.NET SOA 中间件的一个药品商店应用案例，可以自由修改自由应用。
+
+学习资料请参考：
+http://eastjade.cnblogs.com
+http://www.smarteas.net
+
+魏琼东
+2013/10/08
+
+
