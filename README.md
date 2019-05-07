@@ -8,7 +8,7 @@ AgileEAS.NET平台基于软件过程改进以及构件化快速开发两方面�
 
 在快速开发方面，AgileEAS.NET平台平台提供了企业应用开发所需的诸如ORM、IOC、分布式通信、插件与平台基础结构以及一系统的快速生成工具，涵盖开发过程中的设计、编码、集成、部署、运维等各个环节。
 
-![github](https://github.com/agilelab/drugshop/blob/master/documents/drugshop1.png "drugshop")  
+![github](https://github.com/agilelab/drugshop/blob/master/Documents/drugshop1.png "drugshop")  
 
 在callhot的AgileEAS.NET平台开发Step By Step系列-药店系统的系统之中，他详细的向大家展示了AgileEAS.NET平台在企业信息系统中提供的强大支持，在短短的一个月时间之向，向大家贡献了一个完整的案例及配套的几十篇渐进式教程，我相信大家通过他的教程，都能应用AgileEAS.NET平台中小型企业应用。
 
