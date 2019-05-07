@@ -16,11 +16,11 @@ AgileEAS.NET平台基于软件过程改进以及构件化快速开发两方面�
 --------
 Callhot接手了新的工作，我在他留下的代码的基础之上，采用了最新的AgileEAS.NET平台进行了一个重构和裁剪，并且通过互联网以SAAS结构向大家发布了这个应用，其总体结构如下。
 
-![github](https://github.com/agilelab/drugshop/blob/master/documents/drugshop2.png "drugshop")  
+![github](https://github.com/agilelab/drugshop/blob/master/Documents/drugshop2.png "drugshop")  
 
 数据库和分布式应用层我部署在我的互联网服务器上，客户端我将提供一个msi包给大家下载，客户端和应用服务器可以通过webservice、WCF(http/TCP)进行数据通信，最终运行界面如下：
 
-![github](https://github.com/agilelab/drugshop/blob/master/documents/drugshop3.png "drugshop")  
+![github](https://github.com/agilelab/drugshop/blob/master/Documents/drugshop3.png "drugshop")  
 
 三、客户端下载及使用说明
 --------
